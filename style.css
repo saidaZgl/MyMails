@@ -1,38 +1,46 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #f5f6fa;
-    font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f6fa;
+  font-size: 14px;
 }
 
 h6 {
     font-size: 14px;
-    margin-bottom: 15px;
+    margin: 0px;
 }
 
 .row {
     display: flex;
     align-items: center;
-    width: 45%;
+    width: 50%;
     background-color: #ffffff;
     border-top: 1px solid #dadada;
     border-right: 1px solid #dadada;
     border-left: 1px solid #dadada;
-    border-bottom: 1px solid #dadada;
+    padding: 15px;
 }
 
 .avatar {
     width: 60px;
     border-radius: 50px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 15px;
 }
 
 .trash {
     width: 15px;
+    margin-left: auto;
 }
 
-.content {
-    width: 444px;
-    padding-right: 50px;
-    padding-left: 20px;
+.last-row {
+  border-bottom: 1px solid #dadada;
+}
+
+#new-message {}
+
+
+#btn-add:focus {
+    outline: 0;
 }
