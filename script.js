@@ -1,14 +1,13 @@
-let messagesCount = document.getElementsByTagName("p").length;
-document.getElementById("count").textContent = messagesCount;
-//console.log(messagesCount);
+let messagesCount = $("p").length;
+$("#count").text(messagesCount);
 
 for (let i = 0; i < document.getElementsByClassName("trash").length; i++) {
   document
     .getElementsByClassName("trash")
     [i].addEventListener("click", function() {
       this.parentNode.remove();
-      let messagesCount = document.getElementsByTagName("p").length;
-      document.getElementById("count").textContent = messagesCount;
+      let messagesCount = $("p").length;
+      $("#count").text(messagesCount);
     });
 }
 
@@ -28,7 +27,7 @@ document.getElementById("btn-add").addEventListener("click", function() {
   mainDiv.appendChild(nameMessageDiv);
 
   let h6 = document.createElement("h6");
-  h6.textContent = "Saïda ZGHAL";
+  h6.textContent = "Saïda Zghal";
   nameMessageDiv.appendChild(h6);
 
   let content = document.createElement("p");
@@ -40,12 +39,12 @@ document.getElementById("btn-add").addEventListener("click", function() {
   trash.src = "images/trash.png";
   mainDiv.appendChild(trash);
 
-  let messagesCount = document.getElementsByTagName("p").length;
-  document.getElementById("count").textContent = messagesCount;
+  let messagesCount = $("p").length;
+  $("#count").text(messagesCount);
 
   trash.addEventListener("click", function() {
     this.parentNode.remove();
-    let messagesCount = document.getElementsByTagName("p").length;
-    document.getElementById("count").textContent = messagesCount;
+    let messagesCount = $("p").length;
+    $("#count").text(messagesCount);
   });
 });
