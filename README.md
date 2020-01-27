@@ -12,7 +12,7 @@ les technologies Front End (HTML, CSS et JS)
 
 3. Supprimer un message
 
-4. Mettre à jour un compteur de message
+4. Mettre à jour un compteur de messages
 
 5. Développer un moteur de recherche de messages
 
