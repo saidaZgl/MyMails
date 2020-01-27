@@ -16,3 +16,23 @@ $("body").on("click", ".trash", function() {
   let messagesCount = $("p").length;
   $("#count").text(messagesCount);
 });
+
+$("#btn-add").click(function() {
+  let message = $("#add-message").val();
+  $("body").append(
+    `
+          <div class="row">
+            <img class="avatar" src="images/avatar-2.jpg">
+            <div>
+              <h6>Saïda ZGHAL</h6>
+              <p>` +
+      message +
+      `</p>
+            </div>
+            <img class="trash" src="images/trash.png">
+          </div>
+  `
+  );
+  $("#count").text($("p").length);
+  $("#add-message").val("");
+});
