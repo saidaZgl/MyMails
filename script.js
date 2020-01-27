@@ -36,3 +36,20 @@ $("#btn-add").click(function() {
   $("#count").text($("p").length);
   $("#add-message").val("");
 });
+
+$("#btn-search").click(function() {
+  $("h6").each(function() {
+    if ($("#search-message").val() != $(this).text()) {
+      $(this)
+        .parent()
+        .parent()
+        .fadeOut();
+    } else {
+      $(this)
+        .parent()
+        .parent()
+        .show();
+    }
+  });
+  $("#search-message").val("");
+});
